@@ -1,1 +1,1 @@
-## Portfoli Website for Cecilia Kennedy
+## Portfolio Website for Cecilia Kennedy
