@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cecilia Kennedy | Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #6a5acd;
+            --secondary: #ff7f50;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .disclaimer {
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), #8a7fd9);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-align: center;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+            margin: 0.5rem auto;
+        }
+        
+        .skill {
+            background-color: var(--light);
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: inline-block;
+            margin: 0.3rem;
+        }
+        
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-status {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .education-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .education-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: #5a4abc;
+            border-color: #5a4abc;
+        }
+    </style>
+</head>
+<body>
+    <header class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Cecilia Kennedy</h1>
+                    <p class="tagline">Software Development Student | Creating Digital Solutions</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                        <a href="tel:437-925-8597" class="text-white text-decoration-none d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill"></i> 437-925-8597
+                        </a>
+                        <a href="mailto:iliacec278@gmail.com" class="text-white text-decoration-none d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill"></i> iliacec278@gmail.com
+                        </a>
+                        <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2">
+                            <i class="bi bi-geo-alt-fill"></i> Hamilton, ON
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Summary -->
+        <section id="summary" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <p class="fs-5">I'm a Software Development student at Mohawk College with a passion for creating user-friendly web applications. Through my coursework and personal projects, I've developed skills in JavaScript, HTML5, and CSS. I'm eager to apply my problem-solving abilities and attention to detail to real-world development challenges.</p>
+                    <p class="fs-5">With five years of experience in customer-facing roles, I've honed my communication skills and ability to understand user needs - skills that I believe are essential for creating effective software solutions.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education -->
+        <section id="education" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="education-title">Software Development – Computer Systems Technology</div>
+                <div class="d-flex justify-content-between flex-wrap mt-2 text-muted">
+                    <span>Mohawk College</span>
+                    <span>2023 - Present</span>
+                </div>
+                <p class="mt-1">Hamilton, ON</p>
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <section id="skills" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="text-center">
+                <div class="skill">Java</div>
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">React</div>
+                <div class="skill">React Native</div>
+                <div class="skill">UI/UX Design</div>
+                <div class="skill">Software Testing</div>
+                <div class="skill">Debugging</div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4 class="text-center mb-3">Frameworks</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            React
+                            <span class="badge bg-primary rounded-pill">Learning</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            React Native
+                            <span class="badge bg-primary rounded-pill">Learning</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-center mb-3">Databases</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            MySQL
+                            <span class="badge bg-primary rounded-pill">Familiar</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects -->
+        <section id="projects" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="section-title">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="project-card p-3">
+                        <h3 class="project-title">Church Website</h3>
+                        <span class="project-status">In Progress</span>
+                        <p class="project-description">Creating a responsive website for a local church using JavaScript, HTML5 and CSS. The website features event schedules, testimonials, and contact information with a modern UI/UX design.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary me-1">HTML5</span>
+                            <span class="badge bg-secondary me-1">CSS</span>
+                            <span class="badge bg-secondary me-1">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="project-card p-3">
+                        <h3 class="project-title">Task Manager App</h3>
+                        <span class="project-status">Completed</span>
+                        <p class="project-description">A simple task management application built with JavaScript that allows users to add, edit, and remove tasks with local storage functionality.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary me-1">JavaScript</span>
+                            <span class="badge bg-secondary me-1">HTML5</span>
+                            <span class="badge bg-secondary me-1">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="project-card p-3">
+                        <h3 class="project-title">React Native To-Do App</h3>
+                        <span class="project-status">Planned</span>
+                        <p class="project-description">A mobile to-do application built with React Native that syncs across devices and includes push notifications for due dates.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary me-1">React Native</span>
+                            <span class="badge bg-secondary me-1">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Resume -->
+        <section id="resume" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="section-title">Resume</h2>
+            <p class="text-center mb-4">Below is a summary of my work experience. For a complete resume, please use the download link.</p>
+            
+            <div class="education-item">
+                <div class="education-title">Crew Member</div>
+                <div class="d-flex justify-content-between flex-wrap mt-2 text-muted">
+                    <span>McDonalds</span>
+                    <span>2023 - 2024</span>
+                </div>
+                <p class="mt-1">Hamilton, ON</p>
+                <ul class="mt-2">
+                    <li>Demonstrated flexibility by working various shifts and covering last minute shifts</li>
+                    <li>Addressed and resolved complaints quickly and in a respectful way</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Sales Associate</div>
+                <div class="d-flex justify-content-between flex-wrap mt-2 text-muted">
+                    <span>7-Eleven</span>
+                    <span>2022</span>
+                </div>
+                <p class="mt-1">Hamilton, ON</p>
+                <ul class="mt-2">
+                    <li>Presented a friendly attitude with customers and coworkers</li>
+                    <li>Assisted customers with product information and maintained workplace cleanliness</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Server</div>
+                <div class="d-flex justify-content-between flex-wrap mt-2 text-muted">
+                    <span>Wimpy's Diner</span>
+                    <span>2021 - 2022</span>
+                </div>
+                <p class="mt-1">Hamilton, ON</p>
+                <ul class="mt-2">
+                    <li>Ensured orders taken were accurate and maintained positive interactions with customers</li>
+                    <li>Worked efficiently and resolved complaints in a respectful way</li>
+                </ul>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary btn-lg"><i class="bi bi-download me-2"></i> Download Full Resume (PDF)</a>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="mb-5 p-4 bg-white rounded shadow-sm">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="text-center mb-4">I'm always interested in new opportunities and connecting with fellow developers. Feel free to reach out!</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-4">
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>437-925-8597</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>iliacec278@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Hamilton, ON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Cecilia Kennedy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
